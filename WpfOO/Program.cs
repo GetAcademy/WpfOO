@@ -15,11 +15,11 @@ namespace WpfOO
             var application = new Application();
             var window = new Window();
 
-            var panel1 = new ClickerPanelWithoutInheritance();
-            var panel2 = new ClickerPanelWithoutInheritance();
-            var panel3 = new ClickerPanelWithoutInheritance();
-            var panel4 = new ClickerPanelWithoutInheritance();
-            var panel5 = new ClickerPanelWithoutInheritance();
+            var panel1 = new ClickerPanel();
+            var panel2 = new ClickerPanel();
+            var panel3 = new ClickerPanel();
+            var panel4 = new ClickerPanel();
+            var panel5 = new ClickerPanel();
 
             //var button = new Button {Content = "Trykk her"};
             //_label = new Label {Content = "0"};
@@ -33,11 +33,11 @@ namespace WpfOO
             //window.Content = panel;
 
             var panel = new StackPanel();
-            panel.Children.Add(panel1.Panel);
-            panel.Children.Add(panel2.Panel);
-            panel.Children.Add(panel3.Panel);
-            panel.Children.Add(panel4.Panel);
-            panel.Children.Add(panel5.Panel);
+            panel.Children.Add(panel1);
+            panel.Children.Add(panel2);
+            panel.Children.Add(panel3);
+            panel.Children.Add(panel4);
+            panel.Children.Add(panel5);
 
             window.Content = panel;
 
